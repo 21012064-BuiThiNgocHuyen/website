@@ -1,4 +1,4 @@
-<p>Liệt kê đơn hàng</p>
+<h3>Liệt kê đơn hàng</h3>
 <?php
     $limit = 10;
     $page = isset($_GET['trang']) ? intval($_GET['trang']) : 1;

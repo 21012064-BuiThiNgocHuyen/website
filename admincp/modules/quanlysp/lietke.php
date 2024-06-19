@@ -18,7 +18,7 @@ $begin = ($page - 1) * $limit;
 
 ?>
 <h2>Liệt kê sản phẩm</h2>
-<button type="button"><a href="index.php?action=quanlysp&query=them">Thêm</a></button>
+<button class="add" type="button"><a href="index.php?action=quanlysp&query=them">Thêm sản phẩm</a></button>
 <table style="width: 90%;border-collapse:collapse; margin:auto" border="1" >
   <tr>
     <th>ID</th>
@@ -58,8 +58,8 @@ $begin = ($page - 1) * $limit;
     </td>
     <td>
       
-      <a class="button" onclick="return deleteSP('<?php echo $row['id_sanpham']?>')" href="modules/quanlysp/xuly.php?idsanpham=<?php echo $row['id_sanpham']?>">Xóa</a> |
-      <a class="button" href="?action=quanlysp&query=sua&idsanpham=<?php echo $row['id_sanpham']?>">Sửa</a>
+      <a onclick="return deleteSP('<?php echo $row['id_sanpham']?>')" href="modules/quanlysp/xuly.php?idsanpham=<?php echo $row['id_sanpham']?>"><i class="fa-regular fa-trash-can"></i></a>
+      <a href="?action=quanlysp&query=sua&idsanpham=<?php echo $row['id_sanpham']?>"><i class="fa-regular fa-pen-to-square"></i></a>
     </td>
   </tr>
 <?php 

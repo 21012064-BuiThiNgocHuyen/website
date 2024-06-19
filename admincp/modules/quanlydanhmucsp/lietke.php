@@ -15,7 +15,7 @@
 ?>
 
 <h3>Liệt kê danh mục sản phẩm</h3>
-<button type="button"><a href="index.php?action=quanlydanhmucsanpham&query=them">Thêm</a></button>
+<button class="add" type="button"><a href="index.php?action=quanlydanhmucsanpham&query=them">Thêm danh mục</a></button>
 <table style="width: 90%;border-collapse:collapse; margin:auto" border="1" >
   <tr>
     <th>ID</th>
@@ -31,8 +31,8 @@
     <td><?php echo $i ?></td>
     <td><?php echo $row['tendanhmuc'] ?></td>
     <td>
-      <a class="button" onclick="return deleteDanhmucSP('<?php echo $row['id_danhmuc']?>')" href="modules/quanlydanhmucsp/xuly.php?iddanhmuc=<?php echo $row['id_danhmuc']?>">Xóa</a> | 
-      <a class="button" href="?action=quanlydanhmucsanpham&query=sua&iddanhmuc=<?php echo $row['id_danhmuc']?>">Sửa</a>
+      <a onclick="return deleteDanhmucSP('<?php echo $row['id_danhmuc']?>')" href="modules/quanlydanhmucsp/xuly.php?iddanhmuc=<?php echo $row['id_danhmuc']?>"><i class="fa-regular fa-trash-can"></i></a> 
+      <a href="?action=quanlydanhmucsanpham&query=sua&iddanhmuc=<?php echo $row['id_danhmuc']?>"><i class="fa-regular fa-pen-to-square"></i></a>
     </td>
   </tr>
 <?php  

@@ -10,19 +10,19 @@
 <form action="modules/quanlysp/xuly.php?idsanpham=<?php echo $row['id_sanpham'] ?>" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Tên sản phẩm</td>
-    <td><input type="text" value="<?php echo $row['tensanpham'] ?>" name="tensanpham" required></td>
+    <td><input type="text" value="<?php echo $row['tensanpham'] ?>" name="tensanpham"></td>
   </tr>
   <tr>
     <td>Mã sản phẩm</td>
-    <td><input type="text" value="<?php echo $row['masp'] ?>" name="masp" required></td>
+    <td><input type="text" value="<?php echo $row['masp'] ?>" name="masp"></td>
   </tr>
   <tr>
     <td>Giá sản phẩm</td>
-    <td><input type="text" value="<?php echo $row['giasp'] ?>" name="giasp" required></td>
+    <td><input type="text" value="<?php echo $row['giasp'] ?>" name="giasp"></td>
   </tr>
   <tr>
     <td>Số lượng</td>
-    <td><input type="text" value="<?php echo $row['soluong'] ?>" name="soluong" required></td>
+    <td><input type="text" value="<?php echo $row['soluong'] ?>" name="soluong"></td>
   </tr>
   <tr>
     <td>Hình ảnh</td>
@@ -33,12 +33,12 @@
     </tr>
   <tr>
     <td>Tóm tắt</td>
-    <td><textarea rows="10" name="tomtat" style="resize: none;" required><?php echo $row['tomtat'] ?></textarea></td>
+    <td><textarea rows="10" name="tomtat" style="resize: none;"><?php echo $row['tomtat'] ?></textarea></td>
   </tr>
   
   <tr>
     <td>Nội dung</td>
-    <td><textarea rows="10" name="noidung" style="resize: none;" required><?php echo $row['noidung'] ?></textarea></td>
+    <td><textarea rows="10" name="noidung" style="resize: none;"><?php echo $row['noidung'] ?></textarea></td>
   </tr>
   
   <tr>

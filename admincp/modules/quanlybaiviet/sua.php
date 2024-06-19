@@ -10,24 +10,24 @@
 <form action="modules/quanlybaiviet/xuly.php?idbaiviet=<?php echo $row['id'] ?>" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Tên bài viết</td>
-    <td><input type="text" value="<?php echo $row['tenbaiviet'] ?>" required name="tenbaiviet"></td>
+    <td><input type="text" value="<?php echo $row['tenbaiviet'] ?>" name="tenbaiviet"></td>
   </tr>
   
   <tr>
     <td>Hình ảnh</td>
     <td>
-      <input type="file" required name="hinhanh">
+      <input type="file"  name="hinhanh">
       <img src="modules/quanlybaiviet/uploads/<?php echo $row['hinhanh'] ?>" width="200px" height="180px">
       </td>
     </tr>
   <tr>
     <td>Tóm tắt</td>
-    <td><textarea rows="10" name="tomtat" style="resize: none;" required><?php echo $row['tomtat'] ?></textarea></td>
+    <td><textarea rows="10" name="tomtat" style="resize: none;"><?php echo $row['tomtat'] ?></textarea></td>
   </tr>
   
   <tr>
     <td>Nội dung</td>
-    <td><textarea rows="10" name="noidung" style="resize: none;" required><?php echo $row['noidung'] ?></textarea></td>
+    <td><textarea rows="10" name="noidung" style="resize: none;"><?php echo $row['noidung'] ?></textarea></td>
   </tr>
   
   <tr>

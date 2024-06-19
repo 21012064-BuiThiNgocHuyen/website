@@ -17,7 +17,7 @@
 
 ?>
 <h3>Liệt kê bài viết</h3>
-<button type="button"><a href="index.php?action=quanlybaiviet&query=them">Thêm</a></button>
+<button class="add" type="button"><a href="index.php?action=quanlybaiviet&query=them">Thêm bài viết</a></button>
 <table style="width: 90%;border-collapse:collapse; margin:auto" border="1" >
   <tr>
     <th>Thứ tự</th>
@@ -50,8 +50,8 @@
     </td>
     <td>
       
-      <a class="button" onclick="return deleteBV('<?php echo $row['id']?>')" href="modules/quanlybaiviet/xuly.php?idbaiviet=<?php echo $row['id']?>">Xóa</a> |
-      <a class="button" href="?action=quanlybaiviet&query=sua&idbaiviet=<?php echo $row['id']?>">Sửa</a>
+      <a onclick="return deleteBV('<?php echo $row['id']?>')" href="modules/quanlybaiviet/xuly.php?idbaiviet=<?php echo $row['id']?>"><i class="fa-regular fa-trash-can"></i></a> 
+      <a  href="?action=quanlybaiviet&query=sua&idbaiviet=<?php echo $row['id']?>"><i class="fa-regular fa-pen-to-square"></i></a>
     </td>
   </tr>
 <?php 

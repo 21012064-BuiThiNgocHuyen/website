@@ -16,7 +16,7 @@
     
 ?>
 <p>Liệt kê danh mục bài viết</p>
-<button type="button"><a href="index.php?action=quanlydanhmucbaiviet&query=them">Thêm</a></button>
+<button class="add" type="button"><a href="index.php?action=quanlydanhmucbaiviet&query=them">Thêm danh mục</a></button>
 <table style="width: 90%;border-collapse:collapse" border="1" >
   <tr>
     <th>ID</th>
@@ -32,8 +32,8 @@
     <td><?php echo $i ?></td>
     <td><?php echo $row['tendanhmuc_baiviet'] ?></td>
     <td>
-      <a class="button" onclick="return deleteDanhmucBV('<?php echo $row['id_baiviet']?>')" href="modules/quanlydanhmucbaiviet/xuly.php?idbaiviet=<?php echo $row['id_baiviet']?>">Xóa</a> | 
-      <a class="button" href="?action=quanlydanhmucbaiviet&query=sua&idbaiviet=<?php echo $row['id_baiviet']?>">Sửa</a>
+      <a  onclick="return deleteDanhmucBV('<?php echo $row['id_baiviet']?>')" href="modules/quanlydanhmucbaiviet/xuly.php?idbaiviet=<?php echo $row['id_baiviet']?>"><i class="fa-regular fa-trash-can"></i></a>
+      <a  href="?action=quanlydanhmucbaiviet&query=sua&idbaiviet=<?php echo $row['id_baiviet']?>"><i class="fa-regular fa-pen-to-square"></i></a>
     </td>
   </tr>
 <?php 

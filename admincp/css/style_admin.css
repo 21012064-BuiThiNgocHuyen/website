@@ -1,0 +1,59 @@
+.title_admin{
+    font-size: 30px;
+    text-align: center;
+}
+.wrapper{
+    border: 1px solid black;
+    height: auto;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+ 
+}
+.admin_list{
+    display: flex;
+    padding: 0;
+    /* margin:10px 20px; */
+    list-style: none;
+    /* width: 100%; */
+    height: 40px;
+    line-height: 25px;
+    background-color: rgb(20, 24, 24);
+    position: sticky;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+.admin_list li{
+    
+    padding:5px 20px;
+    border-right: 1px solid #fff;
+}
+.admin_list>li:hover{
+    background-color: yellow;
+}
+.admin_list>li:hover a{
+    color: red;
+}
+.admin_list li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+.button{
+    color: #fff;
+    text-decoration: none;
+    background-color: blue;
+    padding: 2px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.clear{
+    clear: both;
+}
+td{
+    text-align: center;
+}

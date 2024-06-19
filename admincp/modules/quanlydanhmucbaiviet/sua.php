@@ -10,11 +10,11 @@
   ?>
   <tr>
     <td>Tên danh mục bài viết</td>
-    <td><input type="text" value="<?php echo $dong['tendanhmuc_baiviet'] ?>" name="tendanhmucbaiviet"></td>
+    <td><input type="text" value="<?php echo $dong['tendanhmuc_baiviet'] ?>" name="tendanhmucbaiviet" required></td>
   </tr>
   <tr>
     <td>Thứ tự</td>
-    <td><input type="text" value="<?php echo $dong['thutu'] ?>" name="thutu"></td>
+    <td><input type="text" value="<?php echo $dong['thutu'] ?>" name="thutu" required></td>
   </tr>
   <tr>
     <td colspan="2"><input type="submit" name="suadanhmucbaiviet" value="Sửa danh mục bài viết"></td>

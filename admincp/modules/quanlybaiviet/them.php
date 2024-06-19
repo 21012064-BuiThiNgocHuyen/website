@@ -4,20 +4,20 @@
   <form action="modules/quanlybaiviet/xuly.php" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Tên bài viết</td>
-    <td><input type="text" name="tenbaiviet"></td>
+    <td><input type="text" name="tenbaiviet" required></td>
   </tr>
   <tr>
     <td>Hình ảnh</td>
-    <td><input type="file" name="hinhanh"></td>
+    <td><input type="file" name="hinhanh" required></td>
   </tr>
   <tr>
     <td>Tóm tắt</td>
-    <td><textarea rows="10" name="tomtat" style="resize: none;"></textarea></td>
+    <td><textarea rows="10" name="tomtat" style="resize: none;" required></textarea></td>
   </tr>
   
   <tr>
     <td>Nội dung</td>
-    <td><textarea rows="10" name="noidung" style="resize: none;"></textarea></td>
+    <td><textarea rows="10" name="noidung" style="resize: none;" required></textarea></td>
   </tr>
   
   <tr>

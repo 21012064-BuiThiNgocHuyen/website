@@ -3,11 +3,11 @@
   <form action="modules/quanlydanhmucbaiviet/xuly.php" method="POST">
   <tr>
     <td>Tên danh mục bài viết</td>
-    <td><input type="text" name="tendanhmucbaiviet"></td>
+    <td><input type="text" name="tendanhmucbaiviet" required></td>
   </tr>
   <tr>
     <td>Thứ tự</td>
-    <td><input type="text" name="thutu"></td>
+    <td><input type="text" name="thutu" required></td>
   </tr>
   <tr>
     <td colspan="2"><input class="add" type="submit" name="themdanhmucbaiviet" value="Thêm danh mục bài viết"></td>

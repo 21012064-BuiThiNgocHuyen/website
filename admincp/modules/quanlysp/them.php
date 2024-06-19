@@ -4,32 +4,32 @@
   <form action="modules/quanlysp/xuly.php" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Tên sản phẩm</td>
-    <td><input type="text" name="tensanpham"></td>
+    <td><input type="text" name="tensanpham" required></td>
   </tr>
   <tr>
     <td>Mã sản phẩm</td>
-    <td><input type="text" name="masp"></td>
+    <td><input type="text" name="masp" required></td>
   </tr>
   <tr>
     <td>Giá sản phẩm</td>
-    <td><input type="text" name="giasp"></td>
+    <td><input type="text" name="giasp" required></td>
   </tr>
   <tr>
     <td>Số lượng</td>
-    <td><input type="text" name="soluong"></td>
+    <td><input type="text" name="soluong" required></td>
   </tr>
   <tr>
     <td>Hình ảnh</td>
-    <td><input type="file" name="hinhanh"></td>
+    <td><input type="file" name="hinhanh" required></td>
   </tr>
   <tr>
     <td>Tóm tắt</td>
-    <td><textarea rows="10" name="tomtat" style="resize: none;"></textarea></td>
+    <td><textarea rows="10" name="tomtat" style="resize: none;" required></textarea></td>
   </tr>
   
   <tr>
     <td>Nội dung</td>
-    <td><textarea rows="10" name="noidung" style="resize: none;"></textarea></td>
+    <td><textarea rows="10" name="noidung" style="resize: none;" required></textarea></td>
   </tr>
   
   <tr>
